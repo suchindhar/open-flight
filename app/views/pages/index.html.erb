@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Rails App</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+</head>
+<body>
+  <!-- Container for React app -->
+  <div id="react-root"></div>
+
+  <!-- Include Webpacker JavaScript pack -->
+  <%= javascript_pack_tag 'pages' %>
+</body>
+</html>
