@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Your Rails App</title>
-  <%= csrf_meta_tags %>
-  <%= csp_meta_tag %>
-</head>
-<body>
-  <!-- Container for React app -->
-  <div id="react-root"></div>
+  <head>
+    <title>My Rails App</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
 
-  <!-- Include Webpacker JavaScript pack -->
-  <%= javascript_pack_tag 'pages' %>
-</body>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_pack_tag 'application' %>
+    <%= javascript_pack_tag 'index' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
 </html>
